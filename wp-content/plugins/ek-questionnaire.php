@@ -109,90 +109,9 @@ add_shortcode('ek_questionnaire', function () {
         <button type="submit" name="ekq_submit">Submit Questionnaire</button>
       </form>
     </section>
-    <style>
-      .ek-form-section {
-        max-width: 640px;
-        margin: 2.5em auto;
-        background: rgba(255,255,255,0.97);
-        padding: 1.8rem 1.7rem 2.0rem 1.7rem;
-        border-radius: 18px;
-        box-shadow: 0 2px 14px rgba(0,0,0,0.08);
-        color: #232933;
-      }
-      .ek-form-section label {
-        margin-top: .8em;
-        font-weight: 600;
-        font-family: 'Marvel', Arial, sans-serif;
-        color: #31445b;
-        letter-spacing: .03em;
-        font-size: 1.06rem;
-      }
-      .ek-form-section input,
-      .ek-form-section select,
-      .ek-form-section textarea {
-        padding: 0.56em 1.1em;
-        border: 1px solid #bcd6e1;
-        border-radius: 9px;
-        margin-bottom: 0.15em;
-        background: #f9fafb;
-        color: #222;
-        font-size: 1.01rem;
-        font-family: inherit;
-        box-shadow: 0 1px 5px rgba(44,62,80,0.04);
-        transition: box-shadow 0.17s;
-        width: 100%;
-        max-width: 100%;
-      }
-      .ek-form-section input:focus,
-      .ek-form-section select:focus,
-      .ek-form-section textarea:focus {
-        outline: none;
-        box-shadow: 0 0 0 2px #0693e3;
-        background: #fff;
-      }
-      .ek-form-section textarea {
-        min-height: 48px;
-        max-height: 140px;
-        resize: vertical;
-      }
-      .ek-form-section button[type="submit"] {
-        margin-top: 1.35em;
-        background: var(--global-palette-btn-bg-hover,#44563c);
-        color: var(--global-palette-btn-hover,#fff);
-        font-weight: 600;
-        padding: 0.75rem 2.25rem;
-        border: none;
-        border-radius: 40px;
-        font-size: 1.12rem;
-        cursor: pointer;
-        font-family: 'Marvel','Arial',sans-serif;
-        box-shadow: 0px 15px 25px -7px rgba(0,0,0,0.11);
-        transition: background .17s, color .17s;
-        display: inline-block;
-      }
-      .ek-form-section button[type="submit"]:hover {
-        background: var(--global-palette-btn-bg,#5e7753);
-        color: #fff;
-      }
-      .ek-form-section .msg {
-        margin-bottom: 1em;
-        padding: 0.85em 1em;
-        border-radius: 9px;
-        font-size: 1.03em;
-        background: #e2f3ea;
-        color: #167c33;
-        font-weight: 600;
-        border: 1px solid #b3e0c7;
-      }
-      .ek-form-section .error {
-        background: #ffeaea;
-        color: #b90000;
-        border: 1px solid #ffb1b1;
-      }
-      @media (max-width: 767px) {
-        .ek-form-section { max-width: 99vw; padding: 1.1em 0.7em 1.5em 0.7em; }
-      }
-    </style>
+
+
+
     <?php
     return ob_get_clean();
 });
