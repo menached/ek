@@ -1,0 +1,64 @@
+/* EK Construction: Universal Heading Styles (Modular) */
+
+/* Imports for fonts */
+@import url("https://fonts.googleapis.com/css?family=Barlow:700,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:700,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,400&display=swap");
+
+/* Headings (h1, h2, h3) */
+h1,
+h2,
+h3 {
+    font-family: "Barlow", "Lato", "Playfair Display", Arial, sans-serif;
+    color: #31445b;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 0.45em;
+}
+
+/* Responsive font sizes for headings */
+h1 {
+    font-size: 3.1rem;
+    line-height: 1.14;
+}
+h2 {
+    font-size: 2.1rem;
+    line-height: 1.18;
+}
+h3 {
+    font-size: 1.55rem;
+    line-height: 1.23;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+    h2 {
+        font-size: 1.52rem;
+    }
+    h3 {
+        font-size: 1.16rem;
+    }
+}
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+    h2 {
+        font-size: 1.13rem;
+    }
+    h3 {
+        font-size: 1.05rem;
+    }
+}
+
+/* Section Headings Class (optional usage) */
+.section-title {
+    color: #31445b;
+    font-family: "Barlow", "Lato", "Playfair Display", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 0.45em;
+}

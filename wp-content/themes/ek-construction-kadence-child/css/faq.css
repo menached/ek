@@ -1,0 +1,68 @@
+/* EK Construction: FAQ Section Styles (Modular) */
+
+#ek-faq {
+    max-width: 840px;
+    margin: 2em auto 2.5em auto;
+}
+#ek-faq > div {
+    border-radius: 16px;
+    background: #fafbfc;
+    box-shadow: 0 3px 18px rgba(40, 50, 75, 0.06);
+    padding: 2.3em 1.5em;
+}
+#ek-faq details {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #e5eaf6;
+    padding-bottom: 0.8em;
+    transition: box-shadow 0.13s;
+}
+#ek-faq details:last-child {
+    border-bottom: none;
+}
+
+#ek-faq summary {
+    font-size: 1.13rem;
+    font-family: "Barlow", "Lato", "Playfair Display", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #31445b;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    background: none;
+    border-radius: 9px;
+    padding: 0.16em 0.18em;
+    transition: background 0.13s;
+}
+#ek-faq summary:hover,
+#ek-faq details[open] > summary {
+    background: #f0f7fa;
+}
+#ek-faq i {
+    margin-right: 0.62em;
+    font-size: 1.18em;
+    vertical-align: middle;
+}
+
+#ek-faq div > div {
+    margin-top: 0.7em;
+    margin-left: 2em;
+    color: #36404a;
+    font-size: 1.03em;
+    font-family: "Inter", "Arial", sans-serif;
+    line-height: 1.62;
+}
+
+@media (max-width: 600px) {
+    #ek-faq > div {
+        padding: 1.12em 0.5em;
+    }
+    #ek-faq summary {
+        font-size: 1.01rem;
+    }
+    #ek-faq div > div {
+        margin-left: 1em;
+    }
+}

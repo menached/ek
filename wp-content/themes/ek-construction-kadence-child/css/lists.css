@@ -1,0 +1,17 @@
+/* EK Construction: FontAwesome Lists Styles (Modular) */
+
+ul.fa-bullets li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5em;
+}
+ul.fa-bullets li:before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free"; /* or "Font Awesome 6 Free" */
+    font-weight: 900; /* solid style */
+    position: absolute;
+    left: 0;
+    top: 0.12em;
+    color: #5e7753;
+    font-size: 1.13em;
+}
