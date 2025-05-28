@@ -1,0 +1,24 @@
+/* EK Construction: Hero Section Styles (Modular) */
+
+.hero-title,
+.home-hero h1 {
+    color: #e28906;
+    font-family: "Barlow", "Lato", "Playfair Display", Arial, sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .hero-title,
+    .home-hero h1 {
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 767px) {
+    .hero-title,
+    .home-hero h1 {
+        font-size: 1.6rem;
+    }
+}
