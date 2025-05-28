@@ -6,7 +6,7 @@
     font-family: "Inter", "Arial", sans-serif;
 }
 
-#ek-faq > div {
+#ek-faq>div {
     border-radius: 16px;
     background: #fafbfc;
     box-shadow: 0 3px 18px rgba(40, 50, 75, 0.06);
@@ -42,7 +42,7 @@
 }
 
 #ek-faq summary:hover,
-#ek-faq details[open] > summary {
+#ek-faq details[open]>summary {
     background: #f0f7fa;
 }
 
@@ -52,7 +52,7 @@
     vertical-align: middle;
 }
 
-#ek-faq div > div {
+#ek-faq div>div {
     margin-top: 0.7em;
     margin-left: 2em;
     color: #36404a;
@@ -62,7 +62,7 @@
 }
 
 @media (max-width: 600px) {
-    #ek-faq > div {
+    #ek-faq>div {
         padding: 1.12em 0.5em;
     }
 
@@ -70,7 +70,30 @@
         font-size: 1.01rem;
     }
 
-    #ek-faq div > div {
+    #ek-faq div>div {
         margin-left: 1em;
     }
 }
+
+
+
+
+@media (max-width: 900px) {
+    .ek-about-section .about-flex {
+        flex-direction: column;
+        gap: 1.1em;
+    }
+
+    #ek-faq div>div {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    li {
+        font-size: 0.7em;
+    }
+
+    p {
+        font-size: 0.7em !important;
+    }

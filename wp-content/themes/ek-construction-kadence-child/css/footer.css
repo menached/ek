@@ -1,4 +1,6 @@
-/* EK Construction Footer Styles (modular) */
+/* EK Construction Footer List Styles (modular, v2)
+   Use with: <ul class="fa-bullets ek-footer-list"> ... </ul> */
+
 .ek-footer-list,
 .ek-footer-list ul {
     list-style: none;
@@ -14,8 +16,9 @@
     font-size: 1.06em;
     margin: 0.18em 0;
     line-height: 1.45;
-    text-align: left;
-    /* Always left-align text */
+    text-align: left !important;
+    justify-content: flex-start !important;
+    width: 100%;
 }
 
 .ek-footer-list li i {
@@ -25,15 +28,25 @@
 }
 
 /* Responsive for mobile: keep icon and text side by side, align left */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .ek-footer-list li {
-        justify-content: flex-start;
-        text-align: left;
-        font-size: 1.04em;
-        gap: 0.6em;
+        gap: 0.45em;
+        font-size: 0.97em;
+        padding: 0.08em 0;
+        width: 100%;
+        text-align: left !important;
+        justify-content: flex-start !important;
     }
+}
 
-    .ek-footer-list {
-        padding-left: 0;
-    }
+/* Fix for Kadence/WordPress forced centering inside columns/widgets */
+.site-footer-section,
+.footer-widget-area,
+.site-footer-focus-item,
+.footer-widget-area-inner,
+.widget_block,
+.footer-widget2,
+.footer-widget3,
+.footer-widget4 {
+    text-align: left !important;
 }
