@@ -1,0 +1,102 @@
+/* EK Construction About Page Modular Styles */
+
+.ek-about-section {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 22px rgba(0, 0, 0, 0.09);
+    padding: 2.5em 3vw;
+    max-width: 100%;
+}
+
+.ek-about-section .about-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.ek-about-section .about-col {
+    flex: 1 1 240px;
+    min-width: 240px;
+}
+
+.ek-about-section h3 {
+    font-size: 1.2em;
+    color: #143065;
+    margin-bottom: 0.5em;
+    font-family: "Barlow", "Lato", "Playfair Display", Arial, sans-serif;
+    font-weight: 700;
+}
+
+.ek-about-section ul {
+    margin: 0;
+    padding-left: 1.25em;
+    color: #222;
+    line-height: 1.7;
+    list-style: none;
+}
+
+.ek-about-section li {
+    position: relative;
+    margin-bottom: 0.33em;
+    padding-left: 0;
+}
+
+.ek-about-section i {
+    margin-right: 0.7em;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+.ek-about-section p {
+    margin: 0 0 0.7em 0;
+    color: #36404a;
+    font-size: 1.05em;
+}
+
+.ek-about-section blockquote {
+    margin: 1.7em 0 0 0;
+    font-size: 1.07em;
+    color: #2264c1;
+    border-left: 3px solid #c4d2e5;
+    padding-left: 1em;
+    background: none;
+}
+
+.ek-about-section blockquote strong {
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .ek-about-section .about-flex {
+        flex-direction: column;
+        gap: 1.1em;
+    }
+}
+
+@media (max-width: 600px) {
+    li {
+        font-size: 0.7em;
+    }
+
+    p {
+        font-size: 0.7em !important;
+    }
+
+    blockquote {
+        font-size: 0.7em !important;
+    }
+
+    .ek-about-section {
+        padding: 1.25em 0.5em;
+        border-radius: 11px;
+    }
+
+    .ek-about-section .about-col {
+        min-width: unset;
+    }
+
+    .ek-about-section h3 {
+        font-size: 1.07em;
+    }
+}

@@ -8,7 +8,8 @@
 /* Headings (h1, h2, h3) */
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: "Barlow", "Lato", "Playfair Display", Arial, sans-serif;
     color: #31445b;
     letter-spacing: 1px;
@@ -21,33 +22,45 @@ h1 {
     font-size: 3.1rem;
     line-height: 1.14;
 }
+
 h2 {
     font-size: 2.1rem;
     line-height: 1.18;
 }
+
 h3 {
     font-size: 1.55rem;
     line-height: 1.23;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.33;
 }
 
 @media (max-width: 1024px) {
     h1 {
         font-size: 2.3rem;
     }
+
     h2 {
         font-size: 1.52rem;
     }
+
     h3 {
         font-size: 1.16rem;
     }
 }
+
 @media (max-width: 767px) {
     h1 {
         font-size: 1.7rem;
     }
+
     h2 {
         font-size: 1.13rem;
     }
+
     h3 {
         font-size: 1.05rem;
     }

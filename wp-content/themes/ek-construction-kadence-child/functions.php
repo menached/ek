@@ -55,12 +55,13 @@ add_action('wp_enqueue_scripts', function () {
         'base-fonts.css',
         'headings.css',
         'header.css',
+        'footer.css',
         'hero.css',
         'faq.css',
         'forms.css',
         'lists.css',
-        'fa-lists.css',
-        'faq-section.css',
+        'about.css',
+        'faq.css',
         'custom.css'
     ];
     foreach ($modular_styles as $file) {
