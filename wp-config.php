@@ -23,6 +23,10 @@ define('DB_CHARSET', 'utf8mb4');
 define('DB_COLLATE', '');
 
 
+@ini_set('upload_max_size', '128M');
+@ini_set('post_max_size', '128M');
+@ini_set('memory_limit', '256M');
+
 /**#@+
  * Authentication unique keys and salts.
  *
