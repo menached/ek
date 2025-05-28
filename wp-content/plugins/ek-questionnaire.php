@@ -46,14 +46,14 @@ add_shortcode('ek_questionnaire', function () {
     }
     ?>
     <section class="ek-form-section">
-      <h4 style="font-family: 'Marvel', Arial, sans-serif; font-size: 2rem; text-align: center; margin-bottom: 0.4em; color: #31445b; letter-spacing: 1px;">Custom Project Questionnaire</h4>
-      <p style="text-align:center; color:#5e7753; margin-bottom:1.5em; font-size:1.07em;">Tell us about your vision. We respond quickly to every inquiry.</p>
+      <h4>Custom Project Questionnaire</h4>
+      <p>Tell us about your vision. We respond quickly to every inquiry.</p>
       <?php if ($sent): ?>
         <div class="msg">Thank you! Your questionnaire has been sent.</div>
       <?php elseif ($error): ?>
         <div class="msg error"><?php echo esc_html($error); ?></div>
       <?php endif; ?>
-      <form method="POST" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" autocomplete="on" novalidate>
+      <form method="POST" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
 
         <label for="ekq_name">Full Name *</label>
         <input type="text" id="ekq_name" name="name" placeholder="Your full name" required value="<?php echo esc_attr($_POST['name'] ?? ''); ?>">
